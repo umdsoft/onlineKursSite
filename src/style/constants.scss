@@ -1,0 +1,19 @@
+$root_color: #FF8800;
+$border_color: #646464;
+
+@mixin font($font)
+{
+  font-family: "Poppins";
+  @if $font == Light {
+    font-weight: 300;
+  } @else if $font == Regular {
+    font-weight: 400;
+  } @else if $font == Medium {
+    font-weight: 500;
+  } @else if $font == Bold {
+    font-weight: 700;
+  }
+  @else if $font == Black {
+    font-weight: 900;
+  }
+}
